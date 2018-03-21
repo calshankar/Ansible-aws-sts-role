@@ -21,9 +21,8 @@ Note that you can add custom plugin into 'filter_plugin' dir
 
 ```
 # Example requirements.yml file
-- src: https://github.com/aws/Ansible-aws-sts-role.git
+- src: https://github.com/calshankar/Ansible-aws-sts-role.git
   scm: git
-  version: v1.0
   name: aws-sts
 ```
 
