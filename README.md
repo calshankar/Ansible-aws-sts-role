@@ -23,7 +23,7 @@ Note that you can add custom plugin into 'filter_plugin' dir
 # Example requirements.yml file
 - src: https://github.com/calshankar/Ansible-aws-sts-role.git
   scm: git
-  name: aws-sts
+  name: sts
 ```
 
 Once you have created `roles/requirements.yml`, you can install the role using the `ansible-galaxy` command line tool.
@@ -31,6 +31,9 @@ Once you have created `roles/requirements.yml`, you can install the role using t
 ```
 $ ansible-galaxy install --role-file=roles/<rolesfile>.yml --roles-path=<path to roles dir> --force
 ```
+
+Ideally this should create a directory 'sts' under roles parent directory, unless you wish to change the **--roles-path**
+
 ## Usage
 
 ### Inputs
